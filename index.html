@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jonesjoseph</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/24a4c380db.js"
+      crossorigin="anonymous">
+    </script>
+</head>
+<body>
+<div id="header">
+    <div class ="container">
+        <nav>
+            <img src="jones.jpg" class="logo">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header-text">
+        <p>DEVELOPER</p> 
+        <br>
+        <h1>Hi, I am<br><span>Jones Joseph</span></h1>
+    </div>     
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="column1">
+                <img src="about.JPG" class="about">
+            </div>
+            <div class="column2">
+                <h1>About Me</h1>
+                <br>
+                <p>I am a first year CSE student studying at Model Engineering College. I am an aspiring programmer, diving into the world of technology and innovation.
+                </p>
+                <div class="tabtitles">
+                    <p class="tablinks activelink" onclick="opentab('skills')">Skills</p>
+                    <p class="tablinks" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tabcontents activetab" id="skills">
+                    <ul>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+
+                    </ul>
+                </div>
+                <div class="tabcontents" id="education">
+                    <ul>
+                        <li><span>Btech CSE First year</span><br>Model Engineering College</li>
+                        <li><span>XII</span><br>Marygiri English Medium School</li>
+                        <li><span>X</span><br>CMI Christ School</li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contact">
+    <div class="contactme">
+        <h1>Contact Me</h1>
+        <p><i class="fa-sharp fa-solid fa-envelope" style="color:darkseagreen;"></i>   jonesjoseph@gmail.com</p>
+        <br>
+        <p><i class="fa-solid fa-phone" style="color:darkseagreen;"></i>   6282629714</p>
+        <div class="socialmedia">
+            <a href="http://www.linkedin.com/in/jonesjoseph8281"><i class="fa-brands fa-linkedin-in fa-lg" style="color:darkseagreen;"></i></a>
+            <a href="https://github.com/jonesjoseph8281"><i class="fa-brands fa-github fa-lg" style="color:darkseagreen;"></i></a>
+            <a href="https://instagram.com/jones_.__?igshid=MzMyNGUyNmU2YQ=="><i class="fa-brands fa-instagram fa-lg" style="color:darkseagreen"></i></a>
+        </div>
+    </div>
+</div> 
+
+<script>
+    var tablinks=document.getElementsByClassName('tablinks');
+    var tabcontents=document.getElementsByClassName('tabcontents');
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove('activelink');
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove('activetab');
+        }
+        event.currentTarget.classList.add('activelink');
+        document.getElementById(tabname).classList.add('activetab')
+
+    }
+</script>
+</body>
+</html>

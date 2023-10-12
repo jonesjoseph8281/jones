@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+body{
+   background:black;
+   color: white; 
+
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(bgpic.jpg);
+    background-position: center;
+    background-size:cover;
+
+}
+
+.logo{
+    height:100px;
+    width:100px;
+    border-radius: 10px;
+}
+
+.container{
+    padding: 30px;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin:20px
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content:"";
+    width: 0%;
+    height:3px;
+    background: darkseagreen;
+    position: absolute;
+    left:0%;
+    bottom:-6px;
+    transition:0.3s;
+
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 16%;
+    font-size: 20px;
+    margin-left: 80px;
+}
+
+.header-text h1{
+    font-size: 50px;
+
+}
+
+.header-text h1 span{
+    color: darkseagreen;
+
+}
+
+#about{
+    padding-top: 100px;
+    padding-left:10px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.column1{
+    flex-basis: 35%;
+}
+
+.column1 img{
+    width:100%;
+    border-radius: 10px;
+}
+
+.column2{
+    flex-basis:60%;
+}
+.column2 h1{
+    color:darkseagreen;
+    font-size:50px;
+}
+.column2 {
+    color: lightgrey;
+    font-weight: lighter;
+    font-size: 20px;
+
+}
+.tabtitles{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 40px;
+
+}
+.tablinks{
+    margin-right: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    position:relative;
+
+}
+.tablinks::after{
+    content:'';
+    width: 0%;
+    height:3px;
+    background:darkseagreen;
+    position: absolute;
+    bottom:-8px;
+    left:0%;
+    transition:0.5s;
+}
+.tablinks.activelink::after{
+    width:50%;
+}
+
+.tabcontents ul li{
+    list-style: none;
+    margin-top:10px;
+    font-size:18px;
+    font-weight: lighter;
+}
+.tabcontents ul li span{
+    color:darkseagreen ;
+    font-size: 15px;
+}
+.tabcontents{
+    display:none;
+}
+
+.tabcontents.activetab{
+    display:block;
+}
+
+#contact{
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-bottom: 500px;
+}
+
+.contactme h1{
+    font-size: 50px;
+    color: darkseagreen;
+    padding-bottom: 40px;
+}
+
+.socialmedia{
+    margin-top: 30px;
+}
+.socialmedia a{
+    margin-right: 15px;
+}
